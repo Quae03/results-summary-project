@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk";
+  margin: 0;
+}
+
+body {
+  background-color: hsl(221, 100%, 96%);
+}
+
+.content {
+  background-color: #fff;
+  border-radius: 30px;
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+button, p:not(.score) {
+  font-size: 18px;
+}
+
+main {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 100px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (max-width: 684px) {
+  main {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+main .result-div {
+  background: blue;
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 30px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 60px;
+  max-width: 350px;
+}
+main .result-div > * {
+  margin-bottom: 30px;
+}
+main .result-div h2 {
+  color: hsl(241, 100%, 89%);
+}
+main .result-div .score-circle {
+  background: linear-gradient(to bottom, hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+  text-align: center;
+  width: 80%;
+}
+main .result-div .score-circle .score {
+  font-size: 60px;
+  font-weight: bold;
+}
+main .result-div .score-circle p:not(.score) {
+  color: hsl(241, 100%, 89%);
+}
+main .result-div p {
+  text-align: center;
+}
+main .summary-div {
+  background-color: #fff;
+  border-radius: 30px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+main .summary-div > * {
+  margin-bottom: 20px;
+}
+main .summary-div h2 {
+  color: hsl(224, 30%, 27%);
+  margin-bottom: 30px;
+}
+main .summary-div ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  width: 250px;
+}
+@media (max-width: 684px) {
+  main .summary-div ul {
+    max-width: 300px;
+  }
+}
+main .summary-div ul li {
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+main .summary-div ul li * {
+  display: inline;
+}
+main .summary-div ul li img {
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}
+main .summary-div ul li p#category1 {
+  color: hsl(0, 100%, 67%);
+}
+main .summary-div ul li p#category2 {
+  color: hsl(39, 100%, 56%);
+}
+main .summary-div ul li p#category3 {
+  color: hsl(166, 100%, 37%);
+}
+main .summary-div ul li p#category4 {
+  color: hsl(234, 85%, 45%);
+}
+main .summary-div ul li p.denominator {
+  color: rgb(129, 126, 126);
+}
+main .summary-div ul #result1 {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+main .summary-div ul #result2 {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+main .summary-div ul #result3 {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+main .summary-div ul #result4 {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+main .summary-div button {
+  background-color: hsl(224, 30%, 27%);
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  padding: 15px;
+  width: 100%;
+}
+main .summary-div button:hover {
+  background: blue;
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  cursor: pointer;
+}/*# sourceMappingURL=styles.css.map */
